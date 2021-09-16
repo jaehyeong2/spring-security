@@ -7,4 +7,5 @@ import org.springframework.stereotype.Repository;
 @Repository  //생략가능. jparepository가 가지고 있음
 public interface UserRepository extends JpaRepository<User,Integer> {
 
+    public User findByUsername(String username);
 }
